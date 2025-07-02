@@ -7,10 +7,16 @@
 int main() {
 
     char *board = malloc(17);
-    char *line = malloc(10);
     if (board == NULL) {
         fprintf(stderr, "Failed to allocate memory.\n");
         return -1;
+    }
+
+    char *line = malloc(10);
+    if (line == NULL) {
+        fprintf(stderr, "Failed to allocate memory.\n");
+        return -1;
+
     }
 
     int i = 0;
